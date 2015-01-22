@@ -14,7 +14,7 @@ use Facebook\GraphObject;
 use Facebook\FacebookRequestException;
 
 FacebookSession::setDefaultApplication($config['app_id'], $config['app_secret']);
-$helper = new FacebookRedirectLoginHelper('http://localhost:8080/php_facebookAPI/index.php');
+$helper = new FacebookRedirectLoginHelper('/php_facebookAPI/index.php');
 
 try {
 	$session = $helper->getSessionFromRedirect();
